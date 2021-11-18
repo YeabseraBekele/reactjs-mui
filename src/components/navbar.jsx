@@ -11,6 +11,7 @@ import {
 } from '@material-ui/core';
 import { Close, Mail, Notifications, Search } from '@material-ui/icons';
 import { useState } from 'react';
+import profilepic from '../static/images/player456.png';
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
@@ -119,11 +120,7 @@ function NavBar() {
           <Badge color="error" badgeContent={3} className={classes.badge}>
             <Notifications />
           </Badge>
-          <Avatar
-            src="/static/images/player456.png"
-            alt="Yabeye"
-            className={classes.profile}
-          />
+          <Avatar src={profilepic} alt="Yabeye" className={classes.profile} />
         </div>
       </Toolbar>
     </AppBar>
