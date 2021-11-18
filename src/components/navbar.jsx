@@ -85,7 +85,7 @@ function NavBar() {
   const [openSearch, setOpenSearch] = useState(false);
   const classes = useStyles({ openSearch });
   return (
-    <AppBar>
+    <AppBar position="fixed">
       <Toolbar className={classes.toolbar}>
         <Typography variant="h6" className={classes.logoLg}>
           Yabeye
