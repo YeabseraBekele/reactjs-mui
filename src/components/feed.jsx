@@ -20,7 +20,7 @@ function Feed() {
   return (
     <Container className={classes.container}>
       {posts.map((post) => (
-        <Post post={post} />
+        <Post key={post.id} post={post} />
       ))}
     </Container>
   );

@@ -37,7 +37,9 @@ function Post({ post }) {
           <Typography gutterBottom variant="h5">
             {post.name}
           </Typography>
-          <Typography variant="body2">{post.description}</Typography>
+          <Typography variant="body2">
+            {post.description + post.description}
+          </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
