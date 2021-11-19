@@ -3,7 +3,7 @@ import banana from '../images/banana.jpg';
 import mango from '../images/mango.jpg';
 import lemon from '../images/lemon.jpg';
 import orange from '../images/orange.jpg';
-import orangeCut from '../images/orangeCut.jpg';
+import orangeCut from '../images/orangecut.jpg';
 const posts = [
   {
     id: '0',

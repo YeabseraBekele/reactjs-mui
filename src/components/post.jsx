@@ -8,7 +8,6 @@ import {
   makeStyles,
   Typography,
 } from '@material-ui/core';
-import mango from '../static/images/mango.jpg';
 const useStyles = makeStyles((theme) => ({
   card: {
     marginBottom: theme.spacing(5),
@@ -24,25 +23,21 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Post() {
+function Post({ post }) {
   const classes = useStyles();
   return (
     <Card className={classes.card}>
       <CardActionArea>
-        <CardMedia className={classes.media} image={mango} title="post" />
+        <CardMedia
+          className={classes.media}
+          image={post.imageUrl}
+          title="post"
+        />
         <CardContent>
           <Typography gutterBottom variant="h5">
-            Fruites
+            {post.name}
           </Typography>
-          <Typography variant="body2">
-            Fruites are the means by which flowering plants disseminate their
-            seed. In botaincal usage, the term frutes a collection of usage
-            rights for a block of spectrumthat is granted by a regulator often
-            through an auction.Fruites are the means by which flowering plants
-            disseminate their seed. In botaincal usage, the term frutes a
-            collection of usage rights for a block of spectrumthat is granted by
-            a regulator often through an auction.
-          </Typography>
+          <Typography variant="body2">{post.description}</Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>

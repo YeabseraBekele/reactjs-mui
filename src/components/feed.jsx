@@ -1,4 +1,6 @@
 import { Container, makeStyles } from '@material-ui/core';
+import { useEffect, useState } from 'react';
+import getPosts from '../static/images/fakePosts';
 import Post from './post';
 
 const useStyles = makeStyles((theme) => ({
@@ -9,13 +11,17 @@ const useStyles = makeStyles((theme) => ({
 
 function Feed() {
   const classes = useStyles();
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    setPosts(getPosts());
+  }, []);
+
   return (
     <Container className={classes.container}>
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+      {posts.map((post) => (
+        <Post post={post} />
+      ))}
     </Container>
   );
 }
