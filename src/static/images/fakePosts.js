@@ -45,3 +45,11 @@ const posts = [
 export default function getPosts() {
   return posts;
 }
+
+export function getFrindsImages() {
+  const imageUrls = [];
+  for (let post of posts) {
+    imageUrls.push(post.imageUrl);
+  }
+  return imageUrls;
+}
