@@ -18,6 +18,8 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: theme.spacing(10),
     backgroundColor: theme.palette.primary.main,
     height: '100vh',
+    position: 'sticky',
+    top: 0,
     [theme.breakpoints.up('sm')]: {
       backgroundColor: 'white',
       color: '#555',
@@ -28,11 +30,6 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     marginBottom: theme.spacing(4),
-    // paddingTop: theme.spacing(1),
-    // paddingBottom: theme.spacing(1),
-    // paddingLeft: theme.spacing(1),
-    // paddingBottom: theme.spacing(1),
-    padding: theme.spacing(0.8),
     [theme.breakpoints.up('sm')]: {
       marginBottom: theme.spacing(3),
       cursor: 'pointer',

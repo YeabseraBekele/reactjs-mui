@@ -4,10 +4,10 @@ import LeftBar from './components/leftbar';
 import NavBar from './components/navbar';
 import RightBar from './components/rightbar';
 import './App.css';
+import AddPost from './components/addPost';
 
 const useStyles = makeStyles((theme) => ({
   right: {
-    display: 'block',
     [theme.breakpoints.down('sm')]: {
       display: 'none',
     },
@@ -20,16 +20,17 @@ function App() {
     <div>
       <NavBar />
       <Grid container>
-        <Grid item sm={2}>
+        <Grid item sm={2} xs={2}>
           <LeftBar />
         </Grid>
-        <Grid item sm={7}>
+        <Grid item sm={7} xs={10}>
           <Feed />
         </Grid>
         <Grid item sm={3} className={classes.right}>
           <RightBar />
         </Grid>
       </Grid>
+      <AddPost />
     </div>
   );
 }
