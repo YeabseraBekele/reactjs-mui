@@ -30,13 +30,18 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     marginBottom: theme.spacing(4),
+
     [theme.breakpoints.up('sm')]: {
-      marginBottom: theme.spacing(3),
+      marginBottom: theme.spacing(2),
       cursor: 'pointer',
+      paddingTop: theme.spacing(1),
+      paddingBottom: theme.spacing(1),
       '&:hover': {
         backgroundColor: theme.palette.primary.main,
         color: 'white',
         borderRadius: theme.shape.borderRadius,
+
+        cursor: 'pointer',
       },
     },
   },
