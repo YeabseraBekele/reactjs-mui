@@ -30,6 +30,8 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     marginBottom: theme.spacing(4),
+    paddingLeft: theme.spacing(0.5),
+    paddingRight: theme.spacing(0.5),
 
     [theme.breakpoints.up('sm')]: {
       marginBottom: theme.spacing(2),
@@ -46,7 +48,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   icon: {
-    marginRight: theme.spacing(1),
     [theme.breakpoints.up('sm')]: {
       marginRight: theme.spacing(2),
     },
@@ -65,7 +66,15 @@ function LeftBar() {
   const classes = useStyles();
   return (
     <Container className={classes.container}>
-      <div className={classes.items}>
+      <div
+        className={classes.items}
+        style={{
+          backgroundColor: '#fff',
+          color: '#115293',
+          borderRadius: 8,
+          padding: 3,
+        }}
+      >
         <Home className={classes.icon} />
         <Typography className={classes.text}>HomePage</Typography>
       </div>

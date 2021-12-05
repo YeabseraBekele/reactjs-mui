@@ -11,7 +11,7 @@ import {
 } from '@material-ui/core';
 import { Close, Mail, Notifications, Search } from '@material-ui/icons';
 import { useState } from 'react';
-import profilepic from '../static/images/player456.png';
+import profilepic from '../static/images/orange_profile.jpeg';
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
