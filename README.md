@@ -16,7 +16,8 @@ With yarn
 with npm
 * source: from the official mui website.
 
-    npm install @mui/icons-material
+    yarn add @mui/icons-material
+
 
 
 
