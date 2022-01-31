@@ -11,3 +11,11 @@ With npm
 With yarn
 
     yarn add @mui/material @emotion/react @emotion/styled
+
+## how to install svg icons
+with yarn
+
+    npm install @mui/icons-material
+
+
+
