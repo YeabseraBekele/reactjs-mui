@@ -14,7 +14,7 @@ With yarn
 
 ## How to install svg icons
 with npm
-source: from the official mui website.
+* source: from the official mui website.
 
     npm install @mui/icons-material
 
